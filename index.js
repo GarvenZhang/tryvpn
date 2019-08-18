@@ -26,7 +26,7 @@ var http = require('http'),
   request = require('request'),
   proxyhandle = function(req, res) {
     console.log(req.url)
-    req.pipe(request('https://www.google.com/search?q=' + req.url.slice('1'))).pipe(res);
+    req.pipe(request('https://www.google.com/search?q=' + req.url.slice('1') + '&oq=' + req.url.slice('1') + '&aqs=chrome..69i57j0l5.454j0j7&sourceid=chrome&ie=UTF-8')).pipe(res);
   };
 http.createServer(proxyhandle)
   .listen(80, (err) => {
