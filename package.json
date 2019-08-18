@@ -1,0 +1,25 @@
+{
+  "name": "tryvpn",
+  "version": "1.0.0",
+  "description": "通过Electron+nodejs写的vpn",
+  "main": "index.js",
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-router": "^7.4.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GarvenZhang/tryvpn.git"
+  },
+  "author": "garven",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GarvenZhang/tryvpn/issues"
+  },
+  "homepage": "https://github.com/GarvenZhang/tryvpn#readme"
+}
