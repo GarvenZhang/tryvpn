@@ -29,7 +29,7 @@ var http = require('http'),
     req.pipe(request('https://www.google.com/search?q=' + req.url.slice('1'))).pipe(res);
   };
 http.createServer(proxyhandle)
-  .listen(3000, (err) => {
-    err && console.error(`app.listen error: ${3000}`)
-    console.log(`Listening at localhost:${3000}`)
+  .listen(80, (err) => {
+    err && console.error(`app.listen error: ${80}`)
+    console.log(`Listening at localhost:${80}`)
   });
