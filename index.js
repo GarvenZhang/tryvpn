@@ -28,4 +28,8 @@ var http = require('http'),
     console.log(req.url)
     req.pipe(request('https://www.google.com/search?q=' + req.url.slice('1'))).pipe(res);
   };
-http.createServer(proxyhandle).listen(process.env.PORT || 3000);
+http.createServer(proxyhandle)
+  .listen(3000, (err) => {
+    err && console.error(`app.listen error: ${3000}`)
+    console.log(`Listening at localhost:${3000}`)
+  });
